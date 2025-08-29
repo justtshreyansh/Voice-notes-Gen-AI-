@@ -1,0 +1,60 @@
+/* Reorder.css */
+
+/* Container styling */
+.recorder-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Input styling */
+  .recorder-container input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .recorder-container input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+  }
+  
+  /* Buttons styling */
+  .recorder-container button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  /* Start Recording button */
+  .recorder-container button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .recorder-container button:first-of-type:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+  }
+  
+  /* Stop button */
+  .recorder-container button:last-of-type {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .recorder-container button:last-of-type:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
