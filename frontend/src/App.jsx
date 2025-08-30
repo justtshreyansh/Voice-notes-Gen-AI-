@@ -8,6 +8,7 @@ import {
 } from "./api";
 import Recorder from "./components/Recorder";
 import "./index.css";
+const api = import.meta.env.VITE_API_BASE;
 
 function NoteItem({ note, onUpdate, onDelete, onSummarize }) {
   const [editing, setEditing] = useState(false);
@@ -81,7 +82,7 @@ function NoteItem({ note, onUpdate, onDelete, onSummarize }) {
             <audio
               controls
               className="audio-player"
-              src={`http://localhost:4000/uploads/${note.audioPath}`}
+              src={`${api}/${note.audioPath}`}
             ></audio>
           )}
 
