@@ -82,7 +82,7 @@ function NoteItem({ note, onUpdate, onDelete, onSummarize }) {
             <audio
               controls
               className="audio-player"
-              src={`${api}/${note.audioPath}`}
+              src={`${api}/uploads/${note.audioPath}`}
             ></audio>
           )}
 
