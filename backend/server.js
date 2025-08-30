@@ -15,10 +15,7 @@ const __dirname = path.dirname(__filename);
 
 // Middleware
 app.use(express.json({ limit: '10mb' }));
-app.use(cors({
-  origin: process.env.CLIENT_ORIGIN ,
-  credentials: true
-}));
+app.use(cors());
 
 // Static to serve audio
 app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
